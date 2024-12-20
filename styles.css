@@ -1,0 +1,257 @@
+/* General Navbar Text Color */
+.navbar, .navbar * {
+  color: white !important; /* Ensure all text in navbar is white initially */
+}
+
+/* Navbar Background */
+.navbar {
+  background-color: #2a3b47; /* Custom dark blue color */
+}
+
+/* Site Name */
+.navbar-brand {
+  font-family: 'Cursive', sans-serif;
+  font-size: 1.8rem; /* Slightly larger font for the site name */
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: #d1d1d1;
+  text-decoration: none;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #d1d1d1; /* Lighter hover effect */
+}
+
+/* Social Icons */
+.social-icons a {
+  margin-left: 10px;
+  font-size: 1.5rem; /* Slightly larger icons for better visibility */
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #d1d1d1;
+}
+
+/* Section 2: Product Cards Section */
+.background-section {
+  background-color: #f4f4f4;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.card-custom {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.card-custom:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.card-custom .card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-custom .text {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Section 3: Ice Cream Description Section */
+.background-section {
+  background-image: url('Cards/bg2.avif'); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Ensures full width on smaller screens */
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow: hidden;
+}
+
+.left-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.right-text {
+  flex: 1;
+  padding-left: 20px;
+  color: #333;
+}
+
+.right-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.right-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Customer Form Section */
+.form-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.customer-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: grid;
+  gap: 15px;
+  text-align: left;
+}
+
+.customer-form label {
+  font-size: 1rem;
+}
+
+.customer-form input,
+.customer-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.customer-form button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.customer-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Make footer links responsive */
+}
+
+.footer-logo h3 {
+  font-size: 1.5rem;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact p {
+  font-size: 1rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .card-custom {
+    width: 100%; /* Ensure cards fill available space on mobile */
+    height: 200px;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-image img {
+    max-width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    margin-top: 20px;
+  }
+}
